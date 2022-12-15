@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+}
+
+.title{
+    font-size: 250%;
+    text-align: center;
+    letter-spacing: .05em;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 120, 120);
+}
+
+.page-contents{
+    padding: 0.5em 0.5em;
+    margin: 2em 0;
+    border: double 5px #8bdaff;
+    width: 23%;
+    position: fixed;
+    text-align: left;
+}
+.page-contents p{
+    margin: 0;
+    padding: 0;
+    width: 23%;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    padding: 0.25em 0;
+    margin: 1em 0;
+}
+
+h1:after{
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(132, 90, 230), transparent);
+    background: linear-gradient(to right, rgb(132, 90, 230), transparent);
+}
+
+h2{
+    padding: 0.25em 0.5em;
+    margin: 1.5em 0;
+    color: #494949;
+    background: transparent;
+    border-left: solid 5px #7db4e6;
+}
+
+h3{
+    position: relative;
+}
+  
+h3:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 7px;
+    background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+}
+
+p{
+    letter-spacing: 0.03em;
+    line-height: 3em
+}
+
+ul{
+    letter-spacing: 0.1em;
+    line-height: 3em
+}
+
+ol{
+    counter-reset: section;
+    list-style-type: none;
+}
+
+li:before{
+    counter-increment: section;
+    content: counters(section, ".") ".";
+}
+
+#child1{
+    margin: 3% 80% 0 1%;
+}
+
+img{
+    width: 100%;
+}
+
+video{
+    width: 100%;
+}
+
+#child2{
+    margin: 0% 20% 0% 30%;
+    padding: 2em;
+    border-right: rgb(32, 32, 32) 0.1em dashed;
+    border-left: rgb(32, 32, 32) 0.1em dashed;
+}
+
+@media (min-width: 500px){
+    #parent{
+      display: flex;
+    }
+    #child1{
+      flex-grow: 1;
+    }
+    #child2{
+      flex-grow: 1;
+    }
+}
+
+.company{
+    text-align: center;
+}
+
+.jump{
+    color: blue;
+}
+
+.jump:hover{
+    color: red;
+}
+  
+.jump:active{
+    color: green;
+}

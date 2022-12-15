@@ -1,0 +1,240 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  background-color: darkgray !important;
+}
+
+.meiryo {
+  font-family: "Meiryo";
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.headerimage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 500%;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: rgb(245, 4, 4);
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 2em 30% 1.5em 30%;
+  padding: 0.2em 0.1em 0.1em 0.1em;
+}
+
+p.title {
+  line-height: 1em;
+}
+
+.subheader {
+  right: 10% !important;
+}
+
+.parents {
+  vertical-align: top;
+}
+
+.mainblocktop {
+  background-color: darkgray;
+}
+
+.liteAmo {
+  background-color: lightyellow;
+}
+
+.heavyAmo {
+  background-color: lightsteelblue;
+}
+
+.energyAmo {
+  background-color: palegreen;
+}
+
+.sniperAmo {
+  background-color: dodgerblue;
+}
+
+.shotgunAmo {
+  background-color: indianred;
+}
+
+.carepackege {
+  background-color: firebrick;
+}
+
+.charIntro {
+  text-align: center;
+}
+.charIntro p {
+  text-align: left !important;
+}
+.charIntro img{
+  vertical-align: middle;
+  width: 45%;
+  height: auto;
+}
+
+.tableOfChar {
+  display: inline-block;
+  background-color: white;
+  border: double 5px #ff0000;
+  padding: 0.5em 0.5em;
+  text-align: left;
+  width: 20%;
+  vertical-align: top;
+  margin: 0 1% 0 2%;
+  position: sticky;
+  top: 5%;
+}
+
+.tableOfChar a {
+  color: purple;
+}
+
+.tableOfChar a:hover {
+  color: red;
+}
+
+.mainblock {
+  padding: 1em;
+  display: inline-block;
+  width: 70%;
+  border-right: rgb(32, 32, 32) 0.1em dashed;
+  border-left: rgb(32, 32, 32) 0.1em dashed;
+}
+
+.mainblock ul {
+  padding: 0 0 0 0.5%;
+}
+.mainblock li {
+  width: 100%;
+  margin: 1% 0 0 1%;
+}
+
+.typesIntro {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  height: fit-content;
+}
+
+.typesIntro ul {
+  margin: 0%;
+}
+.typesIntro li {
+  display: inline-block;
+  width: 30%;
+  margin: 0%;
+}
+.typeImages {
+  background-color: gray;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 50%;
+  height: auto;
+}
+.typeImages img {
+  width: 30%;
+}
+
+
+
+p {
+  letter-spacing: 0.03em;
+  line-height: 3em;
+}
+
+ul {
+  letter-spacing: 0.1em;
+  line-height: 3em;
+}
+
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+.tableOfChar li:before {
+  counter-increment: section;
+  content: counters(section, ".") ".";
+}
+
+img {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  padding: 0.25em 0;
+  margin: 1em 0;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(132, 90, 230), transparent);
+  background: linear-gradient(to right, black, transparent);
+}
+
+h2 {
+  padding: 0.25em 0.5em;
+  margin: 1.5em 0;
+  color: #494949;
+  background: transparent;
+  border-left: solid 5px #7db4e6;
+}
+
+h3 {
+  position: relative;
+}
+
+h3:after {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(
+    -45deg,
+    #6ad1c8,
+    #6ad1c8 2px,
+    #fff 2px,
+    #fff 4px
+  );
+  background: repeating-linear-gradient(
+    -45deg,
+    #6ad1c8,
+    #6ad1c8 2px,
+    #fff 2px,
+    #fff 4px
+  );
+}
+
+@media (min-width: 500px) {
+  #parent {
+    display: flex;
+  }
+  #child1 {
+    flex-grow: 1;
+  }
+  #child2 {
+    flex-grow: 1;
+  }
+}
+
+.company {
+  text-align: center;
+}
